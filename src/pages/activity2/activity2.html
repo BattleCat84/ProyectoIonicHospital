@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hospitales San Jose</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+ 
+  <ion-item>
+    <ion-label stacked>Escriba su nombre</ion-label>
+    <ion-input typeof="text" [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+  <p>
+    <button ion-button color="secundary" (click)="siguiente(nombre)">siguiente</button>
+ 
+  </p>
+
+</ion-content>
